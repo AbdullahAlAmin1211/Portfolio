@@ -1,0 +1,56 @@
+.about {
+  margin: 0 4rem;
+  display: block;
+  padding-top: 15rem;
+
+  &_image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  &_text {
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 778px) {
+  .about {
+    margin: 0 5rem;
+    padding-top: 11rem;
+
+    &_text {
+      h2 {
+        text-align: center;
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    margin: 0 15rem;
+    display: flex;
+    align-items: center;
+    padding-top: 8rem;
+
+    &_image {
+      width: 40%;
+    }
+
+    &_text {
+      width: 60%;
+      padding-left: 4rem;
+      h1 {
+        text-align: center;
+        font-size: 60px;
+      }
+    }
+  }
+}

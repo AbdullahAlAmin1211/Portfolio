@@ -1,0 +1,115 @@
+.portfolio {
+  margin: 0 1rem;
+  display: block;
+  padding-top: 13rem;
+  header {
+    h3 {
+      font-size: 20px;
+      text-align: center;
+    }
+    .portfolio_line {
+      background-color: #333;
+      width: 100%;
+      height: 2px;
+      margin: 0.25rem 0 2rem 0;
+    }
+
+    .portfolio_inner-line {
+      background-color: #2865aa;
+      width: 30%;
+      height: inherit;
+    }
+  }
+  .portfolio_body {
+    gap: 2rem;
+    margin: 3rem 0;
+    .project_list {
+      margin-top: 2rem;
+      border: 1px solid #333;
+      border-radius: 1rem;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      -ms-border-radius: 1rem;
+      -o-border-radius: 1rem;
+
+      img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .project_details {
+        margin: 1rem 1rem;
+        text-align: justify;
+        .project_name {
+          color: #ffff;
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+          margin: 0;
+        }
+        .project_description,
+        .project_link {
+          font-size: 12px;
+          line-height: 16px;
+          color: #777;
+          margin: 8px 0;
+          img {
+            display: inherit;
+          }
+        }
+      }
+    }
+
+    .project_list:hover {
+      background-color: #333;
+    }
+  }
+  .project_button {
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      .project_btn {
+        padding: 1rem 1.5rem;
+        background-color: #333;
+        border: 2px solid white;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        -webkit-border-radius: 1.5rem;
+        -moz-border-radius: 1.5rem;
+        -ms-border-radius: 1.5rem;
+        -o-border-radius: 1.5rem;
+      }
+      .project_btn:hover {
+        background-color: #d5d5d5;
+        color: #333;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 778px) {
+  .portfolio {
+    margin: 0 4rem;
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    margin: 0 15rem;
+    padding-top: 7rem;
+    .portfolio_body {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}

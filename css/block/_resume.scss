@@ -1,0 +1,387 @@
+.resume {
+  margin: 0 1rem;
+  display: block;
+  padding-top: 13rem;
+
+  h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+.experiance {
+  header {
+    .experiance_line {
+      background-color: #333;
+      width: 100%;
+      height: 2px;
+      margin: 0.25rem 0 2rem 0;
+    }
+
+    .experiance_inner-line {
+      background-color: #2865aa;
+      width: 30%;
+      height: inherit;
+    }
+  }
+
+  .experiance_body {
+    .experiance_text {
+      h3 {
+        font-size: 20px;
+      }
+
+      .experiance_text-list {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        // grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #333;
+      }
+
+      .experiance_text-list-duration-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .experiance_text-list-duration-mark {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        border: 1px solid #333;
+        background-color: #222;
+        position: absolute;
+        left: 3px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+
+      .experiance_text-list-duration {
+        background-color: black;
+        width: auto;
+        border-radius: 1.5rem;
+        margin: 1rem 2rem;
+        padding: 0.5rem 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        text-align: center;
+        -webkit-border-radius: 1.5rem;
+        -moz-border-radius: 1.5rem;
+        -ms-border-radius: 1.5rem;
+        -o-border-radius: 1.5rem;
+      }
+
+      .experiance_text-list-description {
+        // text-align: center;
+        margin-left: 2rem;
+
+        h4 {
+          font-size: 1rem;
+          line-height: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        h5 {
+          color: grey;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+          margin: 0;
+        }
+      }
+    }
+
+    .experiance_image {
+      padding-top: 2rem;
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.education {
+  margin-top: 4rem;
+  header {
+    .education_line {
+      background-color: #333;
+      width: 100%;
+      height: 2px;
+      margin: 0.25rem 0 2rem 0;
+    }
+
+    .education_inner-line {
+      background-color: #2865aa;
+      width: 30%;
+      height: inherit;
+    }
+  }
+
+  .education_body {
+    .education_text {
+      margin-top: 2rem;
+      h3 {
+        font-size: 20px;
+      }
+
+      .education_text-list {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        // grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #333;
+        // position: relative;
+      }
+
+      .education_text-list-duration-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .education_text-list-duration-mark {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        border: 1px solid #333;
+        background-color: #222;
+        position: absolute;
+        left: 3px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+
+      .education_text-list-duration {
+        background-color: black;
+        width: auto;
+        border-radius: 1.5rem;
+        margin: 1rem 2rem;
+        padding: 0.5rem 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        text-align: left;
+        -webkit-border-radius: 1.5rem;
+        -moz-border-radius: 1.5rem;
+        -ms-border-radius: 1.5rem;
+        -o-border-radius: 1.5rem;
+      }
+
+      .education_text-list-description {
+        // text-align: center;
+        margin-left: 2rem;
+
+        h4 {
+          font-size: 1rem;
+          line-height: 1rem;
+          margin-bottom: 0.5rem;
+        }
+        h5 {
+          color: grey;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+          margin: 0;
+        }
+      }
+    }
+
+    .education_image {
+      // padding-top: 2rem;
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 778px) {
+  .resume {
+    margin: 0 4rem;
+    padding-top: 9rem;
+
+    h2 {
+      font-size: 40px;
+    }
+    .experiance {
+      .experiance_body {
+        .experiance_text {
+          h3 {
+            font-size: 30px;
+          }
+          .experiance_text-list-duration-mark {
+            left: 52px;
+          }
+
+          .experiance_text-list-duration {
+            margin-left: 2rem;
+          }
+
+          // .experiance_text-list-description {
+          //   text-align: center;
+
+          //   h4 {
+          //     font-size: 1rem;
+          //     margin: 0;
+          //   }
+          //   h5 {
+          //     margin: 0;
+          //   }
+          // }
+        }
+      }
+    }
+    .education {
+      .education_body {
+        .education_text {
+          padding-top: 2rem;
+          h3 {
+            font-size: 30px;
+          }
+          .education_text-list-duration-mark {
+            left: 52px;
+          }
+
+          .education_text-list-duration {
+            margin-left: 2rem;
+          }
+
+          // .education_text-list-description {
+          //   text-align: center;
+
+          //   h4 {
+          //     font-size: 1rem;
+          //     margin: 0;
+          //   }
+          //   h5 {
+          //     margin: 0;
+          //   }
+          // }
+        }
+
+        .education_image {
+          padding-top: 0rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .resume {
+    margin: 0 15rem;
+    padding-top: 5rem;
+
+    h2 {
+      font-size: 40px;
+    }
+    .experiance {
+      .experiance_body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .experiance_text {
+          width: 60%;
+          h3 {
+            font-size: 30px;
+          }
+
+          .experiance_text-list {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+
+          .experiance_text-list-duration-mark {
+            left: 227px;
+          }
+
+          .experiance_text-list-duration {
+            // margin-left: 2rem;
+            // font-size: 1.25rem;
+            // line-height: 2rem;
+          }
+
+          .experiance_text-list-description {
+            margin-left: 0;
+            //   text-align: center;
+
+            //   h4 {
+            //     font-size: 1.25rem;
+            //   }
+            //   h5 {
+            //     font-size: 1rem;
+            //   }
+          }
+        }
+
+        .experiance_image {
+          padding-top: 0;
+          width: 40%;
+        }
+      }
+    }
+    .education {
+      .education_body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .education_text {
+          padding-top: 0;
+          margin-top: 0;
+          width: 60%;
+
+          .education_text-list {
+            // display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #333;
+
+            margin-left: 50px;
+            position: relative;
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: center;
+            // align-items: center;
+            // border-left: 1px solid #333;
+          }
+          h3 {
+            font-size: 30px;
+          }
+          .education_text-list-duration-mark {
+            left: -13px;
+          }
+
+          // .education_text-list-duration {
+          //   margin-left: 2rem;
+          //   font-size: 1.25rem;
+          //   line-height: 2rem;
+          // }
+
+          .education_text-list-description {
+            margin-left: 0;
+            // text-align: center;
+
+            // h4 {
+            //   font-size: 1rem;
+            // }
+            // h5 {
+            //   font-size: 0.75rem;
+            // }
+          }
+        }
+
+        .education_image {
+          padding-top: 0;
+          width: 40%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.skill {
+  margin: 0 1rem;
+  display: block;
+  padding-top: 13rem;
+  header {
+    h3 {
+      font-size: 20px;
+      text-align: center;
+    }
+    .skill_line {
+      background-color: #333;
+      width: 100%;
+      height: 2px;
+      margin: 0.25rem 0 2rem 0;
+    }
+
+    .skill_inner-line {
+      background-color: #2865aa;
+      width: 30%;
+      height: inherit;
+    }
+  }
+  .skill_body {
+    gap: 1rem;
+    margin-top: 1rem;
+    .skill_body-container {
+      margin: 2rem 0;
+      .skill_progress {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .skill_name {
+          font-size: 13px;
+        }
+        .percentage {
+          color: #888;
+          font-size: 11px;
+        }
+      }
+      .progress {
+        height: 0.5rem;
+        width: 100%;
+        border: 2px solid;
+        border-radius: 0.5rem;
+        accent-color: #444;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+      }
+      .progress::-webkit-progress-value {
+        background-color: rgb(59 130 246);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 778px) {
+  .skill {
+    margin: 0 4rem;
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skill {
+    margin: 0 15rem;
+    padding-top: 7rem;
+    .skill_body {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}

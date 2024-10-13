@@ -1,0 +1,21 @@
+@import "_variables";
+@import "block/_navBar";
+@import "block/_about";
+@import "block/_resume";
+@import "block/_certificate";
+@import "block/_skill";
+@import "block/_portfolio";
+@import "block/_contact";
+@import "block/_footer";
+
+* {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222;
+  min-height: 100vh;
+  margin: 0;
+}
