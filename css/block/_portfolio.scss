@@ -2,27 +2,25 @@
   margin: 0 1rem;
   display: block;
   padding-top: 13rem;
+
   header {
     h3 {
       font-size: 20px;
       text-align: center;
     }
-    .portfolio_line {
-      background-color: #333;
-      width: 100%;
-      height: 2px;
-      margin: 0.25rem 0 2rem 0;
-    }
 
-    .portfolio_inner-line {
-      background-color: #2865aa;
-      width: 30%;
-      height: inherit;
+    .portfolio_line {
+      @include line;
+
+      .portfolio_inner-line {
+        @include inneiLine(80%);
+      }
     }
   }
+
   .portfolio_body {
-    gap: 2rem;
     margin: 3rem 0;
+
     .project_list {
       margin-top: 2rem;
       border: 1px solid #333;
@@ -44,6 +42,7 @@
       .project_details {
         margin: 1rem 1rem;
         text-align: justify;
+
         .project_name {
           color: #ffff;
           font-size: 14px;
@@ -51,12 +50,14 @@
           font-weight: 400;
           margin: 0;
         }
+
         .project_description,
         .project_link {
           font-size: 12px;
           line-height: 16px;
           color: #777;
           margin: 8px 0;
+
           img {
             display: inherit;
           }
@@ -68,14 +69,14 @@
       background-color: #333;
     }
   }
+
   .project_button {
     margin: 3rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
 
     a {
       text-decoration: none;
+
       .project_btn {
         padding: 1rem 1.5rem;
         background-color: #333;
@@ -87,6 +88,7 @@
         -ms-border-radius: 1.5rem;
         -o-border-radius: 1.5rem;
       }
+
       .project_btn:hover {
         background-color: #d5d5d5;
         color: #333;
@@ -107,8 +109,10 @@
   .portfolio {
     margin: 0 15rem;
     padding-top: 7rem;
+
     .portfolio_body {
       display: grid;
+      gap: 2rem;
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
