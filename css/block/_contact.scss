@@ -2,26 +2,25 @@
   margin: 0 1rem;
   display: block;
   padding-top: 13rem;
+
   header {
     h3 {
       font-size: 20px;
       text-align: center;
     }
-    .contact_line {
-      background-color: #333;
-      width: 100%;
-      height: 2px;
-      margin: 0.25rem 0 2rem 0;
-    }
 
-    .contact_inner-line {
-      background-color: #2865aa;
-      width: 30%;
-      height: inherit;
+    .contact_line {
+      @include line;
+
+      .contact_inner-line {
+        @include inneiLine(100%);
+      }
     }
   }
+
   .contact_body {
     margin-top: 2.5rem;
+
     .contact_info {
       a,
       p {
@@ -29,44 +28,42 @@
         font-size: 18px;
       }
     }
+
     .contact_form {
       h3 {
         font-size: 20px;
-        // text-align: center;
-      }
-      .contact_form-line {
-        background-color: #333;
-        width: 100%;
-        height: 2px;
-        margin: 0.25rem 0 2rem 0;
       }
 
-      .contact_form-inner-line {
-        background-color: #2865aa;
-        width: 30%;
-        height: inherit;
+      .contact_form-line {
+        @include line;
+
+        .contact_form-inner-line {
+          @include inneiLine(50%);
+        }
       }
+
       form {
-        // display: grid;
-        // grid-template-columns: repeat(2, minmax(0, 1fr));
-        // gap: 1rem;
-        .contact_input-field {
-          background-color: transparent;
-          border: 2px solid #555;
-          border-radius: 2px;
-          width: 96%;
-          padding: 0.625rem;
-          margin-bottom: 1rem;
-          font-size: 1rem;
-          -webkit-border-radius: 2px;
-          -moz-border-radius: 2px;
-          -ms-border-radius: 2px;
-          -o-border-radius: 2px;
-        }
-        .contact_input-field:focus {
-          outline: none;
+        .contact_form-input {
+          .contact_input-field {
+            background-color: transparent;
+            border: 2px solid #555;
+            border-radius: 2px;
+            width: 96%;
+            padding: 0.625rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+          }
+
+          .contact_input-field:focus {
+            outline: none;
+          }
         }
       }
+
       .contact_button-div {
         display: flex;
         justify-content: center;
@@ -84,6 +81,7 @@
           -ms-border-radius: 1rem;
           -o-border-radius: 1rem;
         }
+
         .contact_button:hover {
           background-color: #3b82f6;
           cursor: pointer;
@@ -105,16 +103,19 @@
     margin: 0 15rem;
     padding-top: 7rem;
     padding-bottom: 7rem;
+
     .contact_body {
       display: grid;
       grid-template-columns: 33% 1fr;
       gap: 1rem;
+
       .contact_form {
         form {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 1rem;
         }
+
         .contact_button-div {
           display: block;
         }
